@@ -34,3 +34,6 @@ def loadVersion() {
     }
     return "unknown"
 }
+
+task stage(dependsOn: ['clean', 'jar'])
+jar.mustRunAfter clean
