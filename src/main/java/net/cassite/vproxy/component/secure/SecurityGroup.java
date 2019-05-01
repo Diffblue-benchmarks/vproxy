@@ -11,7 +11,7 @@ import java.util.List;
 import java.util.Optional;
 
 public class SecurityGroup {
-    public static final String defaultName = "(allow all)";
+    public static final String defaultName = "(allow-all)";
 
     public final String alias;
     public final boolean defaultAllow;

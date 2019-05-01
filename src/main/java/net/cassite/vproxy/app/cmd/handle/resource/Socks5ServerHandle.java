@@ -150,7 +150,7 @@ public class Socks5ServerHandle {
                 + " bind " + Utils.ipStr(socks5.bindAddress.getAddress().getAddress()) + ":" + socks5.bindAddress.getPort()
                 + " backends " + socks5.backends.alias
                 + " timeout " + socks5.getTimeout()
-                + " in buffer size " + socks5.getInBufferSize() + " out buffer size " + socks5.getOutBufferSize()
+                + " in-buffer-size " + socks5.getInBufferSize() + " out-buffer-size " + socks5.getOutBufferSize()
                 + " security-group " + socks5.securityGroup.alias
                 + " " + (socks5.allowNonBackend ? "allow-non-backend" : "deny-non-backend");
         }

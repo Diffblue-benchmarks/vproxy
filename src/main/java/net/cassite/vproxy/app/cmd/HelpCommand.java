@@ -460,7 +460,7 @@ public class HelpCommand {
                 Collections.singletonList(
                     new Tuple<>(
                         "list-detail tcp-lb",
-                        "1) \"lb0 -> acceptor elg0 worker elg0 bind 127.0.0.1:18080 backends sgs0 in buffer size 16384 out buffer size 16384 security-group secg0\""
+                        "1) \"lb0 -> acceptor elg0 worker elg0 bind 127.0.0.1:18080 backends sgs0 in-buffer-size 16384 out-buffer-size 16384 security-group secg0\""
                     )
                 ))
             , new ResActMan(ActMan.update, "update in-buffer-size or out-buffer-size of an lb",
@@ -517,7 +517,7 @@ public class HelpCommand {
                 Collections.singletonList(
                     new Tuple<>(
                         "list-detail socks5-server",
-                        "1) \"s5 -> acceptor acceptor worker worker bind 127.0.0.1:18081 backends backend-groups in buffer size 16384 out buffer size 16384 security-group secg0\""
+                        "1) \"s5 -> acceptor acceptor worker worker bind 127.0.0.1:18081 backends backend-groups in-buffer-size 16384 out-buffer-size 16384 security-group secg0\""
                     )
                 ))
             , new ResActMan(ActMan.update, "update in-buffer-size or out-buffer-size of a socks5 server",

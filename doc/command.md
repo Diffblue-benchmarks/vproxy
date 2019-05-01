@@ -152,7 +152,7 @@ Retrieve detailed info of all tcp-loadbalancers.
 
 ```
 list-detail tcp-lb
-1) "lb0 -> acceptor elg0 worker elg0 bind 127.0.0.1:18080 backends sgs0 in buffer size 16384 out buffer size 16384"
+1) "lb0 -> acceptor elg0 worker elg0 bind 127.0.0.1:18080 backends sgs0 in-buffer-size 16384 out-buffer-size 16384 security-group secrg0"
 ```
 
 #### update
@@ -219,7 +219,7 @@ Retrieve detailed info of socks5 servers.
 
 ```
 list-detail socks5-server
-1) "s5 -> acceptor acceptor worker worker bind 127.0.0.1:18081 backends backend-groups in buffer size 16384 out buffer size 16384 security-group secg0"
+1) "s5 -> acceptor acceptor worker worker bind 127.0.0.1:18081 backends backend-groups in-buffer-size 16384 out-buffer-size 16384 security-group secg0"
 ```
 
 #### update

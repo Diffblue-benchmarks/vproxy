@@ -152,7 +152,7 @@ public class TcpLBHandle {
                 + " bind " + Utils.ipStr(tcpLB.bindAddress.getAddress().getAddress()) + ":" + tcpLB.bindAddress.getPort()
                 + " backends " + tcpLB.backends.alias
                 + " timeout " + tcpLB.getTimeout()
-                + " in buffer size " + tcpLB.getInBufferSize() + " out buffer size " + tcpLB.getOutBufferSize()
+                + " in-buffer-size " + tcpLB.getInBufferSize() + " out-buffer-size " + tcpLB.getOutBufferSize()
                 + " security-group " + tcpLB.securityGroup.alias;
         }
     }
