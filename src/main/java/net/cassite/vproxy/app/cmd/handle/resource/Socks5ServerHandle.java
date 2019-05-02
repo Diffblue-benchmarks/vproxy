@@ -135,6 +135,9 @@ public class Socks5ServerHandle {
         if (cmd.args.containsKey(Param.timeout)) {
             socks5.setTimeout(TimeoutHandle.get(cmd));
         }
+        if (cmd.args.containsKey(Param.secg)) {
+            socks5.securityGroup = Application.get().securityGroupHolder.get(cmd.args.get(Param.secg));
+        }
     }
 
     public static class Socks5ServerRef {

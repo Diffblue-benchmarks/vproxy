@@ -137,6 +137,9 @@ public class TcpLBHandle {
         if (cmd.args.containsKey(Param.timeout)) {
             tcpLB.setTimeout(TimeoutHandle.get(cmd));
         }
+        if (cmd.args.containsKey(Param.secg)) {
+            tcpLB.securityGroup = Application.get().securityGroupHolder.get(cmd.args.get(Param.secg));
+        }
     }
 
     public static class TcpLBRef {
